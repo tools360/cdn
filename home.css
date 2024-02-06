@@ -1,0 +1,100 @@
+.rainbow span.rainbow-child {
+	background-image: linear-gradient(-45deg, #e0bd00, #ff4646, #c276ff, #5b77ff) !important;
+	background-size: 800%;
+	background-clip: text;
+	text-emphasis-color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: 18s infinite Gradient;
+	-moz-animation: 18s infinite Gradient;
+	animation: 18s infinite Gradient
+}
+
+@keyframes Gradient {
+
+	0%,
+	100% {
+		background-position: 0 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+}
+
+.ui-autocomplete {
+	list-style: none;
+	background-color: #f9f9fb;
+	border: 1px solid #ccc;
+	max-height: 300px;
+	overflow-y: auto;
+	cursor: pointer;
+	width: calc(10% - 2px);
+	margin-top: 0;
+	padding-left: 0;
+	border-radius: 5px
+}
+
+.ui-autocomplete li {
+	padding: 8px
+}
+
+.ui-autocomplete li:hover {
+	background-color: #e0e0e0
+}
+
+.ui-autocomplete a {
+	text-decoration: none;
+	color: #333
+}
+
+.awesomplete ul li mark,
+.awesomplete>ul {
+	color: #000 !important
+}
+
+.ui-autocomplete b {
+	font-weight: 700
+}
+
+.search-box {
+	line-height: 2em;
+	padding: 4px 10px;
+	box-sizing: border-box;
+}
+
+.awesomplete {
+	width: 100%
+}
+
+.awesomplete>ul {
+	background-color: #fff !important;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1)
+}
+
+@media only screen and (min-width: 768px){	
+	.search_tool_ul{
+		font-size:17px;
+	}
+	.toolcategorytitle{
+		font-size: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.toolcategorytitle{
+		font-size: 18px !important;
+	}
+	.badge{font-weight: 400 !important;}
+}
+
+.toolcategorytitle{
+	padding: 6px 8px !important;
+}
+
+ul.search_tool_ul li a:hover{
+	background-color: #eaff00;
+	color: black !important;
+	padding: 2px 4px 2px 0px !important;
+	border-radius: 2px;
+}
